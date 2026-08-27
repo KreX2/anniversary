@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Story — One Year Together</title>
+<meta name="description" content="A little scrapbook of our first year together.">
+
+<!-- Fonts: Fraunces (warm display serif) + Nunito (rounded, cozy body) + Caveat (handwritten accents) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================
+     INTRO SCREEN
+     Names + tagline are filled in automatically
+     from the `couple` object at the top of script.js
+     ============================================ -->
+<header class="intro" id="intro">
+  <div class="intro-decor" aria-hidden="true">
+    <span class="doodle doodle--heart doodle--1">♡</span>
+    <span class="doodle doodle--star doodle--2">✦</span>
+    <span class="doodle doodle--heart doodle--3">♡</span>
+    <span class="doodle doodle--flower doodle--4">✿</span>
+    <span class="doodle doodle--star doodle--5">✦</span>
+  </div>
+
+  <div class="intro-content">
+    <p class="eyebrow" id="introEyebrow">Our Story</p>
+    <h1 class="intro-names" id="introNames" aria-live="off">
+      <span id="introName1">Name</span>
+      <span class="intro-amp" aria-hidden="true">♡</span>
+      <span id="introName2">Name</span>
+    </h1>
+    <p class="intro-sub" id="introSub">One Year Together</p>
+    <p class="intro-tagline" id="introTagline">
+      From the day we met to all the little moments that became our favorite memories.
+    </p>
+    <button class="btn-begin" id="beginBtn" type="button">
+      <span>Begin Our Story</span>
+      <span class="btn-arrow" aria-hidden="true">→</span>
+    </button>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <span>scroll</span>
+    <span class="scroll-hint-line"></span>
+  </div>
+</header>
+
+<!-- ============================================
+     HORIZONTAL STORY TIMELINE
+     Panels are generated automatically from the
+     `timeline` array in script.js — do not add
+     panels here by hand.
+     ============================================ -->
+<main class="story-scroller" id="storyScroller">
+  <div class="story-sticky" id="storySticky">
+
+    <div class="month-banner" aria-hidden="true">
+      <span id="monthBanner">Month 01</span>
+    </div>
+
+    <button class="nav-arrow nav-arrow--prev" id="prevBtn" type="button" aria-label="Previous moment">
+      <span aria-hidden="true">‹</span>
+    </button>
+
+    <div class="story-track" id="storyTrack" role="list" aria-label="Our story, month by month">
+      <!-- panels injected here by script.js -->
+    </div>
+
+    <button class="nav-arrow nav-arrow--next" id="nextBtn" type="button" aria-label="Next moment">
+      <span aria-hidden="true">›</span>
+    </button>
+
+    <nav class="progress-trail" id="progressTrail" aria-label="Story progress">
+      <!-- paw markers injected here by script.js -->
+    </nav>
+
+    <p class="story-counter" id="storyCounter" aria-hidden="true">01 / 17</p>
+  </div>
+</main>
+
+<!-- ============================================
+     ANNIVERSARY ENDING
+     Content comes from the `ending` object in
+     script.js
+     ============================================ -->
+<footer class="ending" id="ending">
+  <div class="ending-hearts" id="endingHearts" aria-hidden="true"></div>
+
+  <p class="ending-eyebrow" id="endingEyebrow">365 Days of Us</p>
+  <h2 class="ending-heading" id="endingHeading">Happy 1st Anniversary</h2>
+
+  <div class="ending-photo" id="endingPhoto">
+    <div class="polaroid polaroid--large">
+      <div class="polaroid-image" id="endingPhotoImage">
+        <span class="placeholder-text">Our photo goes here ♡</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="ending-message" id="endingMessage">
+    One year down, and I still can't wait to see where the rest of our story takes us.
+  </p>
+
+  <p class="ending-signoff" id="endingSignoff">— with all my love</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
